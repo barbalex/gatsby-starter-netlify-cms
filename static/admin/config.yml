@@ -17,9 +17,9 @@ collections:
       - {label: "Column", name: "column", widget: "select", options: ["maritime", "political"]}
       - {label: "Order", name: "order", widget: "number", valueType: "int", required: false}
       - {label: "Tags", name: "tags", widget: "select", multiple: "true", options: ["weather", "highlighted", "victims", "statistics", "monthlyStatistics"], required: false}
-      - {label: "Links", name: "links", widget: "list", fields: [
+      - {label: "Links", name: "links", widget: "list", required: false, fields: [
           {label: "Label", name: "label", widget: "string"},
-          {label: "Url", name: "url", widget: "string"}], required: false
+          {label: "Url", name: "url", widget: "string"}]
         }
   - name: "blog"
     label: "Blog"

@@ -17,11 +17,11 @@ collections:
       - {label: "Date", name: "date", widget: "date", format: "DD.MM.YYYY"}
       - {label: "Column", name: "column", widget: "select", options: ["maritime", "political"]}
       - {label: "Order", name: "order", widget: "number", valueType: "int"}
-      - {label: "Tags", name: "tags", widget: "align", multiple: "true", options: ["weather", "highlighted", "victims", "statistics", "monthlyStatistics"]}
-      - {label: "Links", name: "links", widget: "list", fields: [
-          {label: "Label", name: "label", widget: "string"},
-          {label: "Url", name: "url", widget: "string"}
-        ]}
+      - {label: "Tags", name: "tags", widget: "select", multiple: "true", options: ["weather", "highlighted", "victims", "statistics", "monthlyStatistics"]}
+      - {label: "Links", name: "links", widget: "list", fields: 
+          - {label: "Label", name: "label", widget: "string"}
+          - {label: "Url", name: "url", widget: "string"}
+        }
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"

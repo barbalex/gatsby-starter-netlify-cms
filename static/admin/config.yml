@@ -12,15 +12,14 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "event"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "date", format: "DD.MM.YYYY"}
       - {label: "Column", name: "column", widget: "select", options: ["maritime", "political"]}
-      - {label: "Order", name: "order", widget: "number", valueType: "int"}
-      - {label: "Tags", name: "tags", widget: "select", multiple: "true", options: ["weather", "highlighted", "victims", "statistics", "monthlyStatistics"]}
+      - {label: "Order", name: "order", widget: "number", valueType: "int", required: "false"}
+      - {label: "Tags", name: "tags", widget: "select", multiple: "true", options: ["weather", "highlighted", "victims", "statistics", "monthlyStatistics"], required: "false"}
       - {label: "Links", name: "links", widget: "list", fields: [
           {label: "Label", name: "label", widget: "string"},
-          {label: "Url", name: "url", widget: "string"}]
+          {label: "Url", name: "url", widget: "string"}], required: "false"
         }
   - name: "blog"
     label: "Blog"
